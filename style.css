@@ -1,0 +1,303 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+
+/* start main section  */
+
+
+.main-section {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/main.jpg);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#logo {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 4%;
+  left: 2%;
+  cursor: pointer;
+}
+
+#menu {
+  font-size: 38px;
+  color: rgb(146 64 14);
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  z-index: 999;
+  position: fixed;
+  cursor: pointer;
+}
+
+.text {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  animation-name: slide_up;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+.text .title {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-style: italic;
+  animation-name: slide_up;
+  animation-duration: 1.3s;
+  animation-timing-function: ease;
+}
+
+.text .description {
+  padding-top: 10px;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  padding-bottom: 50px;
+  animation-name: slide_up;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+@keyframes slide_up {
+  0% {
+    transform: translateY(250px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* end main section  */
+
+/* start house section */
+
+.house-section {
+  height: 120vh;
+  width: 100%;
+  position: relative;
+  background-color: #eee;
+}
+
+.house-image {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50px, -50px);
+}
+
+.house-section .about {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-size: 60px;
+  padding-top: 70px;
+  position: relative;
+  left: -20px;
+}
+
+.house-section p {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  padding-top: 30px;
+  position: relative;
+  left: -20px;
+}
+
+.house-text .text-one{
+  height: 150px;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 150px;
+  left: 50px;
+  line-height: 20px;
+  letter-spacing: 1.5px;
+}
+
+.house-text .text-one a {
+  color: black;
+}
+
+.house-text .text-two{
+  height: 150px;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: -10px;
+  left: 1100px;
+  line-height: 20px;
+  letter-spacing: 1.5px;
+}
+
+.house-text .text-two a {
+  color: black;
+}
+
+
+
+
+.team-section {
+  height: 120vh;
+  width: 100%;
+  background-color: #fff;
+}
+
+.team-section .about {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-size: 60px;
+  padding-top: 70px;
+  position: relative;
+  left: -20px;
+}
+
+.team-section p {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  padding-top: 20px;
+  position: relative;
+  left: -20px;
+}
+
+.team-section .content {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.team-section .content .card {
+  position: relative;
+  transition: 0.3s;
+}
+
+.team-section .content .card:hover {
+  transform: scale(1.1);
+}
+
+.team-section .content .card p {
+  position: absolute;
+  left: 5%;
+}
+
+
+
+
+.contact-section {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/contact.jpg');
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.contact-section .about {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 60px;
+  padding-top: 70px;
+  position: relative;
+  left: -20px;
+}
+
+.contact-section .line {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  padding-top: 30px;
+  position: relative;
+  left: -35px;
+}
+
+.contact-section .box  {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 50px;
+  width: 30%;
+  height: 48%;
+  position: absolute;
+  left: 2%;
+}
+
+.contact-section .box input {
+  padding: 25px;
+  border: none;
+  outline: none;
+  border-bottom: 2px dotted black;
+}
+
+.contact-btn {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  color: white;
+  background-color: rgb(146 64 14);
+  border: 5px solid rgb(146 64 14);
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 15px 60px;
+  transition: .3s;
+}
+
+.contact-btn:hover {
+  transform: scale(1.1);
+  background-color: rgb(146 64 14);
+}
+
+/* start scroll to top */
+
+.up {
+  position: fixed;
+  bottom: 50px;
+  right: -50px;
+  background-color: rgb(146 64 14);
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+.up.show {
+  right: 10px;
+}
+
+/* end scroll to top */
